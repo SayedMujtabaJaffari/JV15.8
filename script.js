@@ -4,10 +4,9 @@ var button = document.getElementById("button");
 button.addEventListener("click", onbuttonclick)
 
 function onbuttonclick() {
-    alert("Hello " + input.value)
-    if (hour < 18) {
-        greeting = "Good day";
+    if (input.value == "") {
+        alert("Please enter your name!")
     } else {
-        greeting = "Good evening";
+        alert("Hello " + input.value)
     }
 }
